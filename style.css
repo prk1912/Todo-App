@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(29, 27, 27);
+    font-family: "Poppins", sans-serif;
+}
+.main-div{
+    margin-top: 100px;
+}
+form #inputValue{
+    font-size: 25px;
+    border: 0;
+    outline: none;
+    width: 450px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+}
+li{
+    color: #050608;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.container{
+    margin-bottom: 15px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.flex:last-child{
+    margin-bottom: 10px;
+}
+.todo-list-elem{
+    margin: 10px 0;
+    padding: 22px;
+    border-radius: 10px;
+}
+form > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form .btn{
+    font-size: 22px;
+    background-color: #f5ee62;
+    border: none;
+    outline: none;
+    padding: 10px 23px;
+    display: inline-block;
+    border-radius: 15px;
+}
+.container .delete{
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 11px 30px;
+    background-color: #f5ee62;
+    border: none;
+    outline: none;
+}
+
+/* ---------- Media Quaries -----------  */
+
+@media(max-width:767px){
+    .main-div{
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    form > div{
+        width: 100%;
+        position: relative;
+    }
+    form #inputValue{
+        width: 80%;
+        padding: 8px 0;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    .todo-list-elem{
+        width: 80%;
+    }
+    .flex{
+        margin-bottom: 20px;
+    }
+    form .btn {
+        font-size: 15px;
+        padding: 8px 16px;
+        border-radius: 11px
+    }
+    li{
+        font-size: 18px;
+    }
+    .container .delete {
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 7px 18px;
+    }
+}
+
+@media(max-width:575px){
+    h1{
+        font-size: 30px;
+    }
+    form #inputValue{
+        width: 100%;
+        padding: 8px 0;
+        font-size: 14px;
+        padding-left: 8px;
+        padding-right: 100px;
+    }
+    .todo-list-elem{
+        width: 100%;
+    }
+    form .btn {
+        position: absolute;
+        top: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        right: 10px;
+        font-size: 13px;
+        padding: 4px 10px;
+        border-radius: 10px;
+    }
+    form #inputValue::placeholder{
+        font-size: 11px;
+    }
+    li{
+        font-size: 16px;
+    }
+    .container .delete{
+        font-size: 13px;
+        padding: 5px 9px;
+        border-radius: 10px;   
+    }
+    .flex{
+        margin-bottom: 16px;
+    }
+}
